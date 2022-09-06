@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.3"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/ic_baseline_monitor_heart_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200pt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15pt">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Register Account"
+                android:textAlignment="center"
+                android:textColor="@color/c4"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/regEmail"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10pt"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/email"
+                android:drawingCacheQuality="high"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/l_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/regPassword"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8pt"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/password"
+                android:drawingCacheQuality="high"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/l_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/regConfirm"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8pt"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/password"
+                android:drawingCacheQuality="high"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColorHint="@color/l_gray"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8pt"
+                android:background="@drawable/button_design"
+                android:fontFamily="monospace"
+                android:text="Sign In"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtReturn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8pt"
+                android:drawableStart="@drawable/return_to_login"
+                android:fontFamily="monospace"
+                android:text="Return to login screen"
+                android:textAlignment="center"
+                android:textColor="@color/c5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20pt"
+        android:layout_marginEnd="20pt"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Step Tracker"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
